@@ -18,11 +18,9 @@ def test_xno_full_tabs_flow(login_direct_and_get_page):
     dashboard = XNODashboardPageDirect(page)
 
     dashboard.capture_main_tabs()
-
     dashboard.capture_tab_thi_truong_and_subtabs()
-
     dashboard.capture_tab_co_phieu_and_subtabs()
-    # dashboard.capture_tab_xbot_ai_and_subtabs()
+    dashboard.capture_tab_xbot_ai_and_subtabs()
     # dashboard.capture_tab_xbot_ta_and_subtabs()
 
     print("Đã chụp tab chính + Thị trường và các tab con")

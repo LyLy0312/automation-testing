@@ -170,17 +170,126 @@ class XNODashboardPageDirect:
         screenshot("7_23_pha_day__1d_%.png")
 
         self.page.locator("div.text-end div.hover\\:text-muted.h-4.text-neutral-600").nth(0).click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         screenshot("7_24_pha_day__1d_thay_doi.png")
 
         self.page.locator("div.text-end div.hover\\:text-muted.h-4.text-neutral-600").nth(1).click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         screenshot("7_25_pha_day__1d_klgd.png")
 
         self.page.locator("button:has-text('Ngành')").click()
         self.page.wait_for_timeout(2000)
         screenshot("7_26_nganh.png")
         print("[Captured] Ngành")
+
+    def capture_tab_xbot_ai_and_subtabs(self):
+        def screenshot(name: str):
+            self.page.wait_for_timeout(2000)
+            self.page.screenshot(path=os.path.join("..", "screenshots", name), full_page=True)
+            print(f"[Captured] {name}")
+
+        self.page.locator("button:has-text('XBot AI')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_1_xbot_tin_hieu__bot_phai_sinh.png")
+
+        self.page.locator("button[data-key='$.1']").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_2_xbot_tin_hieu__bot_co_so.png")
+
+        self.page.locator("div.gap-3 button[data-key='botphaisinh']").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_bot_phai_sinh.png")
+
+        self.page.locator("div.gap-3 div.rounded-full:has-text('Nhận tín hiệu')").first.click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_3_modal_bot_phai_sinh__hieu_suat_1w.png")
+
+        self.page.locator("div[data-slot='tabContent']:has-text('Tất cả')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_4_modal_bot_phai_sinh__hieu_suat_tat_ca.png")
+
+        self.page.locator("div[data-slot='tabContent']:has-text('Lệnh mở - Lịch sử')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_5_modal_bot_phai_sinh__lenh_mo_lich_su.png")
+
+        self.page.locator("section[role='dialog'] div.text-refine-bg:has-text('Nhận tín hiệu')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_6_modal_xac_nhan_nhan_tin_hieu.png")
+
+        self.page.locator("section[role='dialog'] div.gap-1 input[type='checkbox']").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_7_modal_xac_nhan_da_tick_checkbox.png")
+
+        self.page.locator("section[role='dialog'] footer button:has-text('Nhận tín hiệu')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_8_modal_sau_khi_xac_nhan_nhan_tin_hieu.png")
+
+        self.page.locator("button[aria-label='Close']").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_9_xbot__bot_phai_sinh_sau_nhan_tin_hieu.png")
+
+        self.page.locator("div.gap-3 button[data-key='botcoso']").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_bot_co_so.png")
+
+        self.page.locator("div.gap-3 div.rounded-full:has-text('Nhận tín hiệu')").first.click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_10_modal_bot_co_so__hieu_suat_tat_ca.png")
+
+        self.page.locator("div[data-slot='tabContent']:has-text('1W')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_11_modal_bot_co_so__hieu_suat_1w.png")
+
+        self.page.locator("div[data-slot='tabContent']:has-text('Lệnh mở - Lịch sử')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_12_modal_bot_co_so__lenh_mo_lich_su.png")
+
+        self.page.locator("section[role='dialog'] div.text-refine-bg:has-text('Nhận tín hiệu')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_13_modal_xac_nhan_bot_co_so.png")
+
+        self.page.locator("section[role='dialog'] div.gap-1 input[type='checkbox']").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_14_modal_bot_co_so__da_tick_checkbox.png")
+
+        self.page.locator("section[role='dialog'] footer button:has-text('Nhận tín hiệu')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_15_modal_bot_co_so__sau_xac_nhan.png")
+
+        self.page.locator("button[aria-label='Close']").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_16_xbot__bot_co_so_sau_nhan_tin_hieu.png")
+
+        self.page.locator("input[placeholder*='Tìm bot theo mã']").fill("HAH")
+        self.page.wait_for_timeout(2000)
+        screenshot("8_17_xbot__tim_kiem_hah.png")
+
+        self.page.locator("div.gap-3 button[data-key='botcuatoi']").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_21_xbot_bot_cua_toi__phai_sinh.png")
+
+        self.page.locator("div.rounded-full:has-text('Hủy nhận tín hiệu')").first.click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_22_xbot_bot_cua_toi__modal_huy_phai_sinh.png")
+
+        self.page.locator("section[role='dialog'] footer button:has-text('Xác nhận hủy')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_23_xbot_bot_cua_toi__phai_sinh_sau_huy.png")
+
+        self.page.locator("button[data-key='$.1']").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_24_xbot_bot_cua_toi__co_so.png")
+
+        self.page.locator("div.rounded-full:has-text('Hủy nhận tín hiệu')").first.click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_25_xbot_bot_cua_toi__modal_huy_co_so.png")
+
+        self.page.locator("section[role='dialog'] footer button:has-text('Xác nhận hủy')").click()
+        self.page.wait_for_timeout(2000)
+        screenshot("8_26_xbot_bot_cua_toi__co_so_sau_huy.png")
+
+
+
 
 
 
