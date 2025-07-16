@@ -31,52 +31,52 @@ class XNODashboardPageDirect:
             self.wait_and_capture(url, selector, filename)
 
     def capture_tab_giao_dich_and_subtabs(self):
-
+        self.page.wait_for_timeout(2000)
         self.screenshot("0_1_giao_dich_bieu_do_mac_dinh.png")
 
         frame = self.page.frame_locator("iframe[src*='vi-tv-chart']")
         frame.locator("#header-toolbar-intervals div[data-role='button'] .value-2y-wa9jT", has_text="D").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_1_giao_dich__dropdown_timeframe.png")
 
         frame.locator("div[data-value='1W']").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_2_giao_dich__chon_timeframe_1w.png")
 
         frame.locator("#header-toolbar-chart-styles div[data-role='button'][title*='Biểu đồ']").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_3_giao_dich__dropdown_kieu_bieu_do.png")
 
         frame.locator("div[data-value='bar']").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_4_giao_dich__chon_kieu_bieu_do_hinh_thanh.png")
 
         frame.locator("#header-toolbar-indicators div[data-role='button']:has-text('Các chỉ báo')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_5_giao_dich__dropdown_chi_bao.png")
 
         frame.locator("span:has-text('Aroon')").first.click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_5_1_Aroon.png")
 
         frame.locator("span:has-text('Biến động Chaikin')").first.click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_5_2_ Biến đôộng chaikin.png")
 
         frame.locator("input[placeholder*='Tìm kiếm']").fill("TRIX")
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_5_3_ Tìm kiếm.png")
 
         frame.locator("span:has-text('TRIX')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_6_giao_dich__chon_chi_bao_trix.png")
 
         frame.locator("span[data-role='button'][data-name='close']").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_7_giao_dich__sau_khi_chon_chi_bao.png")
 
         frame.locator("div[data-role='button'].buttonUndo-nGqa616C").first.click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_8_giao_dich__khoi_phuc_chi_bao.png")
 
         redo_button = frame.locator("div[data-role='button'].buttonUndo-nGqa616C").nth(1)
@@ -85,57 +85,57 @@ class XNODashboardPageDirect:
             redo_button.click()
         else:
             print("Redo button is either hidden or disabled.")
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_9_giao_dich__hien_lai_chi_bao.png")
 
         frame.locator("#header-toolbar-properties").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_10_giao_dich__mo_modal_cai_dat.png")
 
         frame.locator("span.titleText-DggvOZTm:has-text('Mã')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_11_Mã.png")
 
         frame.locator("label:has-text('Các Thanh màu Dựa trên giá Đóng cửa Phiên trước')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_11_1_giao_dich__cai_dat_tab_ma_tick_checkbox.png")
 
         frame.locator("span.titleText-DggvOZTm:has-text('Dòng trạng thái')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_12_giao_dich__cai_dat_tab_dong_trang_thai.png")
 
         frame.locator("div[data-section-name='symbolTextSource'] [data-role='listbox']").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_13_giao_dich__cai_dat_dropdown_mo_ta.png")
 
         frame.locator("div[role='option']:has-text('Ticker')").nth(0).click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_14_giao_dich__cai_dat_mo_ta_chon_ticker.png")
 
         frame.locator("span.titleText-DggvOZTm:has-text('Các tỷ lệ')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_15_Cac-ti-lệ.png")
 
         # Bật checkbox "Biểu tượng Nhãn tên"
         frame.locator("label:has-text('Biểu tượng Nhãn tên')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_15_1_giao_dich__bieu_tuong_nhan_ten_checked.png")
 
         # Tắt checkbox (nếu cần)
         frame.locator("label:has-text('Biểu tượng Nhãn tên')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_15_2_giao_dich__bieu_tuong_nhan_ten_unchecked.png")
 
         frame.locator("span.titleText-DggvOZTm:has-text('Diện mạo')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_16_giao_dich__tab_dien_mao.png")
 
         frame.locator("span[data-role='listbox'][data-name='background-type-options-dropdown']").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_17_giao_dich__chon_hinh_nen_dropdown.png")
 
         frame.locator("div[role='option']:has-text('Gradient')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_18_giao_dich__chon_gradient.png")
 
         frame.locator("button:has-text('OK')").click()
@@ -290,11 +290,11 @@ class XNODashboardPageDirect:
         self.screenshot("1_64_giao_dich__pham_vi_tuy_chinh.png")
 
         frame.locator("span[data-day='2025-07-11']").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_65_giao_dich__chon_tu_ngay_13.png")
 
         frame.locator("span[data-day='2025-07-17']").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_66_giao_dich__chon_den_ngay_13.png")
 
         frame.locator("span.submitButton-KW8170fm:has-text('Đến')").click()
@@ -310,11 +310,11 @@ class XNODashboardPageDirect:
         self.screenshot("1_67_giao_dich__chon_mui_gio_utc_denver.png")
 
         frame.locator("div.text-2Vpz_LXc:has-text('log')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_69_giao_dich__click_log.png")
 
         frame.locator("div.text-2Vpz_LXc:has-text('tự động')").click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(2000)
         self.screenshot("1_70_giao_dich__click_tu_dong.png")
 
     def capture_tab_thi_truong_and_subtabs(self):
@@ -587,6 +587,102 @@ class XNODashboardPageDirect:
         self.page.locator("button:has-text('XBot TA')").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("9_xbot_ta.png")
+
+    def capture_tab_bang_gia_and_subtabs_full(self):
+        self.page.locator("a:has-text('Bảng giá')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("9_1_bang_gia_tab.png")
+
+        self.page.locator("button:has-text('Tất cả các ngành')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_2_nganh_hien_thi_dropdown.png")
+
+        self.page.locator("label:has-text('VN30')").click()
+        self.page.locator("label:has-text('Thép')").click()
+        self.screenshot("9_2_1_bo_tick_vn30_thep.png")
+
+        self.page.mouse.click(0, 0)
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_3_bo_tick_vn30_thep.png")
+
+        self.page.locator("button:has-text('Thêm mã CK')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_4_modal_them_ma_ck.png")
+
+        self.page.locator("input[type='text']").fill("TCB")
+        self.page.wait_for_timeout(2000)
+        self.screenshot("9_4_1_modal_them_ma_ck.png")
+
+        self.page.locator("span:has-text('TCB')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("9_5_chon_TCB.png")
+
+        self.page.locator("footer button:has-text('Thêm mã')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("9_6_sau_khi_them_ma.png")
+
+        self.page.locator("div[tabindex='0']:has-text('HDG')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("9_7_modal_HDG_tong_quan.png")
+
+        self.page.locator("button:has-text('Bảng giá')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_8_modal_evf_nhan_dinh.png")
+
+        self.page.locator("button:has-text('Nhận định')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_10_modal_evf_nhan_dinh.png")
+
+        self.page.locator("button:has-text('XChart AI')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_11_xchart_ai_tab.png")
+
+        self.page.locator("button:has-text('Biểu đồ RRG')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("9_13_rrg_1d.png")
+
+        self.page.locator("button:has-text('Dòng tiền thông minh')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_14_dong_tien_thong_minh.png")
+
+        self.page.locator("button:has-text('Tài chính')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_15_tai_chinh_dinh_gia.png")
+
+        self.page.locator("button:has-text('Chỉ số tài chính')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_16_chi_so_quy_kqkd.png")
+
+        self.page.locator("button:has-text('Hàng năm')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_17_chi_so_nam_mac_dinh.png")
+
+        self.page.locator("button:has-text('Báo cáo tài chính')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_19_bao_cao_cdkh_quy.png")
+
+        self.page.locator("button:has-text('Hàng năm')").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("9_20_bao_cao_cdkh_nam.png")
+
+        self.page.locator("button:has-text('Kết quả kinh doanh')").click()
+        self.screenshot("9_21_kqkd_nam.png")
+        self.page.locator("button:has-text('Hàng quý')").click()
+        self.screenshot("9_22_kqkd_quy.png")
+
+        self.page.locator("button:has-text('Lưu chuyển tiền tệ')").click()
+        self.screenshot("9_23_luu_chuyen_quy.png")
+        self.page.locator("button:has-text('Hàng năm')").click()
+        self.screenshot("9_24_luu_chuyen_nam.png")
+
+        self.page.locator("button:has-text('Hồ sơ')").click()
+        self.screenshot("9_25_ho_so_cong_ty.png")
+        self.page.locator("button:has-text('Cổ đông & GD nội bộ')").click()
+        self.screenshot("9_26_ho_so_co_dong.png")
+
+        self.page.locator("button[aria-label='Close']").click()
+
+
 
 
 
