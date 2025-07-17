@@ -1,4 +1,5 @@
 import os
+import allure
 from playwright.sync_api import Page
 from utils.decorators import screenshot_decorator
 
@@ -8,9 +9,7 @@ class XNODashboardPageDirect:
 
     @screenshot_decorator
     def screenshot(self, name: str):
-        self.page.wait_for_timeout(2000)
-        self.page.screenshot(path=os.path.join("..", "screenshots", name), full_page=True)
-        print(f"[Captured] {name}")
+        pass
 
     def wait_and_capture(self, url: str, selector: str, filename: str):
         self.page.goto(url)
@@ -19,6 +18,7 @@ class XNODashboardPageDirect:
         self.page.screenshot(path=os.path.join("../..", "screenshots", filename), full_page=True)
         print(f"[Captured] {filename}")
 
+    @allure.feature("Main Tabs")
     def capture_main_tabs(self):
         main_tabs = [
             ("https://xno.vn/giao-dich", "a[href='/giao-dich?']", "1_giao_dich.png"),
@@ -30,6 +30,7 @@ class XNODashboardPageDirect:
         for url, selector, filename in main_tabs:
             self.wait_and_capture(url, selector, filename)
 
+    @allure.feature("Giao dịch")
     def capture_tab_giao_dich_and_subtabs(self):
         self.page.wait_for_timeout(2000)
         self.screenshot("0_1_giao_dich_bieu_do_mac_dinh.png")
@@ -317,44 +318,46 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("1_70_giao_dich__click_tu_dong.png")
 
+    @allure.feature("Thị trường")
     def capture_tab_thi_truong_and_subtabs(self):
         self.page.locator("button:has-text('Thị trường')").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot(path=os.path.join("../..", "screenshots", "6_1_thi_truong_bien_dong__phan_bo_dong_tien.png"), full_page=True)
+        self.screenshot("6_1_thi_truong_bien_dong__phan_bo_dong_tien.png")
         print("[Captured] Biến động + Phân bổ dòng tiền")
 
         self.page.locator("button:has-text('Tác động đến index')").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot(path=os.path.join("../..", "screenshots", "6_2_thi_truong_tac_dong_index.png"), full_page=True)
+        self.screenshot("6_2_thi_truong_tac_dong_index.png")
         print("[Captured] Tác động đến index")
 
         self.page.locator("button:has-text('Nước ngoài')").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot(path=os.path.join("../..", "screenshots", "6_3_thi_truong_nuoc_ngoai__1nam.png"), full_page=True)
+        self.screenshot("6_3_thi_truong_nuoc_ngoai__1nam.png")
         print("[Captured] Nước ngoài - 1 năm")
         self.page.locator("button:has-text('10 phiên')").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot(path=os.path.join("../..", "screenshots", "6_4_thi_truong_nuoc_ngoai__10phien.png"), full_page=True)
+        self.screenshot("6_4_thi_truong_nuoc_ngoai__10phien.png")
         print("[Captured] Nước ngoài - 10 phiên")
 
         self.page.locator("button:has-text('Tự doanh')").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot(path=os.path.join("../..", "screenshots", "6_5_thi_truong_tu_doanh__ytd.png"), full_page=True)
+        self.screenshot("6_5_thi_truong_tu_doanh__ytd.png")
         print("[Captured] Tự doanh - YTD")
         self.page.locator("button:has-text('10 phiên')").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot(path=os.path.join("../..", "screenshots", "6_6_thi_truong_tu_doanh__10phien.png"), full_page=True)
+        self.screenshot("6_6_thi_truong_tu_doanh__10phien.png")
         print("[Captured] Tự doanh - 10 phiên")
 
         self.page.locator("button:has-text('Thanh khoản')").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot(path=os.path.join("../..", "screenshots", "6_7_thi_truong_thanh_khoan__5d.png"), full_page=True)
+        self.screenshot("6_7_thi_truong_thanh_khoan__5d.png")
         print("[Captured] Thanh khoản - 5D")
         self.page.locator("button:has-text('0D')").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot(path=os.path.join("../..", "screenshots", "6_8_thi_truong_thanh_khoan__0d.png"), full_page=True)
+        self.screenshot("6_8_thi_truong_thanh_khoan__0d.png")
         print("[Captured] Thanh khoản - 0D")
 
+    @allure.feature("Cổ phiếu")
     def capture_tab_co_phieu_and_subtabs(self):
 
         self.page.locator("button:has-text('Cổ phiếu')").first.click()
@@ -472,6 +475,7 @@ class XNODashboardPageDirect:
         self.screenshot("7_26_nganh.png")
         print("[Captured] Ngành")
 
+    @allure.feature("XBot AI")
     def capture_tab_xbot_ai_and_subtabs(self):
 
         self.page.locator("button:has-text('XBot AI')").click()
@@ -582,12 +586,14 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("8_26_xbot_bot_cua_toi__co_so_sau_huy.png")
 
+    @allure.feature("XBot TA")
     def capture_tab_xbot_ta_and_subtabs(self):
 
         self.page.locator("button:has-text('XBot TA')").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("9_xbot_ta.png")
 
+    @allure.feature("Bảng giá")
     def capture_tab_bang_gia_and_subtabs_full(self):
         self.page.locator("a:has-text('Bảng giá')").click()
         self.page.wait_for_timeout(2000)

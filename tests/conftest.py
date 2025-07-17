@@ -9,8 +9,8 @@ This module contains shared fixtures.
 import os
 import pytest
 
-from pages.Duckduckgo.result import DuckDuckGoResultPage
-from pages.Duckduckgo.search import DuckDuckGoSearchPage
+# from pages.Duckduckgo.result import DuckDuckGoResultPage
+# from pages.Duckduckgo.search import DuckDuckGoSearchPage
 from playwright.sync_api import Playwright, APIRequestContext, Page, expect
 from typing import Generator
 
@@ -19,14 +19,14 @@ from typing import Generator
 # DuckDuckGo search fixtures
 # ------------------------------------------------------------
 
-@pytest.fixture
-def result_page(page: Page) -> DuckDuckGoResultPage:
-    return DuckDuckGoResultPage(page)
-
-
-@pytest.fixture
-def search_page(page: Page) -> DuckDuckGoSearchPage:
-    return DuckDuckGoSearchPage(page)
+# @pytest.fixture
+# def result_page(page: Page) -> DuckDuckGoResultPage:
+#     return DuckDuckGoResultPage(page)
+#
+#
+# @pytest.fixture
+# def search_page(page: Page) -> DuckDuckGoSearchPage:
+#     return DuckDuckGoSearchPage(page)
 
 
 # ------------------------------------------------------------
@@ -117,16 +117,16 @@ def project_columns(
 def project_column_ids(project_columns: list[dict]) -> list[str]:
     return list(map(lambda x: x['id'], project_columns))
 
-from pages.Cho_tot.chotot_home import ChototHomePage
-from pages.Cho_tot.chotot_electronics import ElectronicsPage
-@pytest.fixture
-def home_page(page: Page) -> ChototHomePage:
-    return ChototHomePage(page)
+# from pages.Cho_tot.chotot_home import ChototHomePage
+# from pages.Cho_tot.chotot_electronics import ElectronicsPage
+# @pytest.fixture
+# def home_page(page: Page) -> ChototHomePage:
+#     return ChototHomePage(page)
 
 
-@pytest.fixture
-def electronics_page(page: Page) -> ElectronicsPage:
-    return ElectronicsPage(page)
+# @pytest.fixture
+# def electronics_page(page: Page) -> ElectronicsPage:
+#     return ElectronicsPage(page)
 
 
 #XNO (xóa naày mới chạy được Cho_tot,Duckduckgo,GitHub)
