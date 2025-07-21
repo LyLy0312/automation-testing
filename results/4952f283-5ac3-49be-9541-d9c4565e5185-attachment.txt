@@ -1,0 +1,60 @@
+Đăng nhập thành công
+[Start Screenshot] 0_1_giao_dich_bieu_do_mac_dinh.png
+[Done Screenshot] 0_1_giao_dich_bieu_do_mac_dinh.png in 2.56s
+[Start Screenshot] 1_1_giao_dich__dropdown_timeframe.png
+[Done Screenshot] 1_1_giao_dich__dropdown_timeframe.png in 2.21s
+[Start Screenshot] 1_2_giao_dich__chon_timeframe_1w.png
+[Done Screenshot] 1_2_giao_dich__chon_timeframe_1w.png in 2.18s
+[Start Screenshot] 1_3_giao_dich__dropdown_kieu_bieu_do.png
+[Done Screenshot] 1_3_giao_dich__dropdown_kieu_bieu_do.png in 2.24s
+[Start Screenshot] 1_4_giao_dich__chon_kieu_bieu_do_hinh_thanh.png
+[Done Screenshot] 1_4_giao_dich__chon_kieu_bieu_do_hinh_thanh.png in 2.2s
+[Start Screenshot] 1_5_giao_dich__dropdown_chi_bao.png
+[Done Screenshot] 1_5_giao_dich__dropdown_chi_bao.png in 2.21s
+[Start Screenshot] 1_5_1_Aroon.png
+[Done Screenshot] 1_5_1_Aroon.png in 2.2s
+[Start Screenshot] 1_5_2_ Biến đôộng chaikin.png
+[Done Screenshot] 1_5_2_ Biến đôộng chaikin.png in 2.19s
+[Start Screenshot] 1_5_3_ Tìm kiếm.png
+[Done Screenshot] 1_5_3_ Tìm kiếm.png in 2.18s
+[Start Screenshot] 1_6_giao_dich__chon_chi_bao_trix.png
+[Done Screenshot] 1_6_giao_dich__chon_chi_bao_trix.png in 2.18s
+[Start Screenshot] 1_7_giao_dich__sau_khi_chon_chi_bao.png
+[Done Screenshot] 1_7_giao_dich__sau_khi_chon_chi_bao.png in 2.2s
+[Start Screenshot] 1_8_giao_dich__khoi_phuc_chi_bao.png
+[Done Screenshot] 1_8_giao_dich__khoi_phuc_chi_bao.png in 2.22s
+Redo button is either hidden or disabled.
+[Start Screenshot] 1_9_giao_dich__hien_lai_chi_bao.png
+[Done Screenshot] 1_9_giao_dich__hien_lai_chi_bao.png in 2.18s
+[Start Screenshot] 1_10_giao_dich__mo_modal_cai_dat.png
+[Done Screenshot] 1_10_giao_dich__mo_modal_cai_dat.png in 2.21s
+[Start Screenshot] 1_11_Mã.png
+[Done Screenshot] 1_11_Mã.png in 2.25s
+[Start Screenshot] 1_11_1_giao_dich__cai_dat_tab_ma_tick_checkbox.png
+[Done Screenshot] 1_11_1_giao_dich__cai_dat_tab_ma_tick_checkbox.png in 2.23s
+[Start Screenshot] 1_12_giao_dich__cai_dat_tab_dong_trang_thai.png
+[Done Screenshot] 1_12_giao_dich__cai_dat_tab_dong_trang_thai.png in 2.2s
+[Start Screenshot] 1_13_giao_dich__cai_dat_dropdown_mo_ta.png
+[Done Screenshot] 1_13_giao_dich__cai_dat_dropdown_mo_ta.png in 2.4s
+[Start Screenshot] 1_14_giao_dich__cai_dat_mo_ta_chon_ticker.png
+[Done Screenshot] 1_14_giao_dich__cai_dat_mo_ta_chon_ticker.png in 2.18s
+[Start Screenshot] 1_15_Cac-ti-lệ.png
+[Done Screenshot] 1_15_Cac-ti-lệ.png in 2.19s
+[Start Screenshot] 1_15_1_giao_dich__bieu_tuong_nhan_ten_checked.png
+[Done Screenshot] 1_15_1_giao_dich__bieu_tuong_nhan_ten_checked.png in 2.3s
+[Start Screenshot] 1_15_2_giao_dich__bieu_tuong_nhan_ten_unchecked.png
+[Done Screenshot] 1_15_2_giao_dich__bieu_tuong_nhan_ten_unchecked.png in 2.19s
+[Start Screenshot] 1_16_giao_dich__tab_dien_mao.png
+[Done Screenshot] 1_16_giao_dich__tab_dien_mao.png in 2.2s
+[Start Screenshot] 1_17_giao_dich__chon_hinh_nen_dropdown.png
+[Done Screenshot] 1_17_giao_dich__chon_hinh_nen_dropdown.png in 2.2s
+[Start Screenshot] 1_18_giao_dich__chon_gradient.png
+[Done Screenshot] 1_18_giao_dich__chon_gradient.png in 2.24s
+[Start Screenshot] 1_19_giao_dich__sau_khi_xac_nhan_modal_cai_dat.png
+[Done Screenshot] 1_19_giao_dich__sau_khi_xac_nhan_modal_cai_dat.png in 2.21s
+[Start Screenshot] 1_20_giao_dich__icon_chup_anh.png
+[Done Screenshot] 1_20_giao_dich__icon_chup_anh.png in 2.31s
+[Start Screenshot] 1_21_giao_dich__luu_hinh_anh_bieu_do.png
+[Done Screenshot] 1_21_giao_dich__luu_hinh_anh_bieu_do.png in 2.22s
+[Start Screenshot] 1_22_giao_dich__sao_chep_hinh_anh_bieu_do.png
+[Done Screenshot] 1_22_giao_dich__sao_chep_hinh_anh_bieu_do.png in 2.93s

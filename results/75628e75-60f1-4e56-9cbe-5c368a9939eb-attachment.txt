@@ -1,0 +1,328 @@
+Đăng nhập thành công
+[Start Screenshot] 0_1_giao_dich_bieu_do_mac_dinh.png
+[Done Screenshot] 0_1_giao_dich_bieu_do_mac_dinh.png in 2.61s
+[Start Screenshot] 1_1_giao_dich__dropdown_timeframe.png
+[Done Screenshot] 1_1_giao_dich__dropdown_timeframe.png in 2.38s
+[Start Screenshot] 1_2_giao_dich__chon_timeframe_1w.png
+[Done Screenshot] 1_2_giao_dich__chon_timeframe_1w.png in 2.22s
+[Start Screenshot] 1_3_giao_dich__dropdown_kieu_bieu_do.png
+[Done Screenshot] 1_3_giao_dich__dropdown_kieu_bieu_do.png in 2.32s
+[Start Screenshot] 1_4_giao_dich__chon_kieu_bieu_do_hinh_thanh.png
+[Done Screenshot] 1_4_giao_dich__chon_kieu_bieu_do_hinh_thanh.png in 2.42s
+[Start Screenshot] 1_5_giao_dich__dropdown_chi_bao.png
+[Done Screenshot] 1_5_giao_dich__dropdown_chi_bao.png in 2.47s
+[Start Screenshot] 1_5_1_Aroon.png
+[Done Screenshot] 1_5_1_Aroon.png in 2.32s
+[Start Screenshot] 1_5_2_ Biến đôộng chaikin.png
+[Done Screenshot] 1_5_2_ Biến đôộng chaikin.png in 2.32s
+[Start Screenshot] 1_5_3_ Tìm kiếm.png
+[Done Screenshot] 1_5_3_ Tìm kiếm.png in 2.32s
+[Start Screenshot] 1_6_giao_dich__chon_chi_bao_trix.png
+[Done Screenshot] 1_6_giao_dich__chon_chi_bao_trix.png in 2.45s
+[Start Screenshot] 1_7_giao_dich__sau_khi_chon_chi_bao.png
+[Done Screenshot] 1_7_giao_dich__sau_khi_chon_chi_bao.png in 2.24s
+[Start Screenshot] 1_8_giao_dich__khoi_phuc_chi_bao.png
+[Done Screenshot] 1_8_giao_dich__khoi_phuc_chi_bao.png in 2.39s
+Redo button is either hidden or disabled.
+[Start Screenshot] 1_9_giao_dich__hien_lai_chi_bao.png
+[Done Screenshot] 1_9_giao_dich__hien_lai_chi_bao.png in 2.44s
+[Start Screenshot] 1_10_giao_dich__mo_modal_cai_dat.png
+[Done Screenshot] 1_10_giao_dich__mo_modal_cai_dat.png in 2.26s
+[Start Screenshot] 1_11_Mã.png
+[Done Screenshot] 1_11_Mã.png in 2.2s
+[Start Screenshot] 1_11_1_giao_dich__cai_dat_tab_ma_tick_checkbox.png
+[Done Screenshot] 1_11_1_giao_dich__cai_dat_tab_ma_tick_checkbox.png in 2.53s
+[Start Screenshot] 1_12_giao_dich__cai_dat_tab_dong_trang_thai.png
+[Done Screenshot] 1_12_giao_dich__cai_dat_tab_dong_trang_thai.png in 2.36s
+[Start Screenshot] 1_13_giao_dich__cai_dat_dropdown_mo_ta.png
+[Done Screenshot] 1_13_giao_dich__cai_dat_dropdown_mo_ta.png in 2.39s
+[Start Screenshot] 1_14_giao_dich__cai_dat_mo_ta_chon_ticker.png
+[Done Screenshot] 1_14_giao_dich__cai_dat_mo_ta_chon_ticker.png in 2.34s
+[Start Screenshot] 1_15_Cac-ti-lệ.png
+[Done Screenshot] 1_15_Cac-ti-lệ.png in 2.31s
+[Start Screenshot] 1_15_1_giao_dich__bieu_tuong_nhan_ten_checked.png
+[Done Screenshot] 1_15_1_giao_dich__bieu_tuong_nhan_ten_checked.png in 2.39s
+[Start Screenshot] 1_15_2_giao_dich__bieu_tuong_nhan_ten_unchecked.png
+[Done Screenshot] 1_15_2_giao_dich__bieu_tuong_nhan_ten_unchecked.png in 2.41s
+[Start Screenshot] 1_16_giao_dich__tab_dien_mao.png
+[Done Screenshot] 1_16_giao_dich__tab_dien_mao.png in 2.4s
+[Start Screenshot] 1_17_giao_dich__chon_hinh_nen_dropdown.png
+[Done Screenshot] 1_17_giao_dich__chon_hinh_nen_dropdown.png in 2.37s
+[Start Screenshot] 1_18_giao_dich__chon_gradient.png
+[Done Screenshot] 1_18_giao_dich__chon_gradient.png in 2.24s
+[Start Screenshot] 1_19_giao_dich__sau_khi_xac_nhan_modal_cai_dat.png
+[Done Screenshot] 1_19_giao_dich__sau_khi_xac_nhan_modal_cai_dat.png in 2.44s
+[Start Screenshot] 1_20_giao_dich__icon_chup_anh.png
+[Done Screenshot] 1_20_giao_dich__icon_chup_anh.png in 2.44s
+[Start Screenshot] 1_21_giao_dich__luu_hinh_anh_bieu_do.png
+[Done Screenshot] 1_21_giao_dich__luu_hinh_anh_bieu_do.png in 2.34s
+[Start Screenshot] 1_22_giao_dich__sao_chep_hinh_anh_bieu_do.png
+[Done Screenshot] 1_22_giao_dich__sao_chep_hinh_anh_bieu_do.png in 2.45s
+[Start Screenshot] 1_23_giao_dich__thanh_ngang_vnindex1w.png
+[Done Screenshot] 1_23_giao_dich__thanh_ngang_vnindex1w.png in 2.39s
+[Start Screenshot] 1_24_giao_dich__an_layer_vnindex1w.png
+[Done Screenshot] 1_24_giao_dich__an_layer_vnindex1w.png in 2.43s
+[Start Screenshot] 1_25_giao_dich__hien_layer_vnindex1w.png
+[Done Screenshot] 1_25_giao_dich__hien_layer_vnindex1w.png in 2.49s
+[Start Screenshot] 1_26_giao_dich__3_cham_layer_vnindex1w.png
+[Done Screenshot] 1_26_giao_dich__3_cham_layer_vnindex1w.png in 2.23s
+[Start Screenshot] 1_27_giao_dich__hover_thu_tu_truc_quan.png
+[Done Screenshot] 1_27_giao_dich__hover_thu_tu_truc_quan.png in 2.4s
+[Start Screenshot] 1_28_giao_dich__hover_chuyen_toi.png
+[Done Screenshot] 1_28_giao_dich__hover_chuyen_toi.png in 2.37s
+[Start Screenshot] 1_29_giao_dich__hover_ghim_ty_le.png
+[Done Screenshot] 1_29_giao_dich__hover_ghim_ty_le.png in 2.34s
+[Start Screenshot] 1_30_giao_dich__hover_duong.png
+[Done Screenshot] 1_30_giao_dich__hover_duong.png in 2.42s
+[Start Screenshot] 1_31_giao_dich__thong_tin_ma_giao_dich.png
+[Done Screenshot] 1_31_giao_dich__thong_tin_ma_giao_dich.png in 2.45s
+[Start Screenshot] 1_32_giao_dich__dong_thong_tin_ma_giao_dich.png
+[Done Screenshot] 1_32_giao_dich__dong_thong_tin_ma_giao_dich.png in 2.33s
+[Start Screenshot] 1_33_giao_dich__an_layer_khoi_luong.png
+[Done Screenshot] 1_33_giao_dich__an_layer_khoi_luong.png in 2.48s
+[Start Screenshot] 1_34_giao_dich__hien_layer_khoi_luong.png
+[Done Screenshot] 1_34_giao_dich__hien_layer_khoi_luong.png in 2.36s
+[Start Screenshot] 1_35_giao_dich__setting_khoi_luong.png
+[Done Screenshot] 1_35_giao_dich__setting_khoi_luong.png in 2.28s
+[Start Screenshot] 1_36_giao_dich__checkbox_dong_cua_truoc.png
+[Done Screenshot] 1_36_giao_dich__checkbox_dong_cua_truoc.png in 2.38s
+[Start Screenshot] 1_37_giao_dich__tab_dinh_dang.png
+[Done Screenshot] 1_37_giao_dich__tab_dinh_dang.png in 2.49s
+[Start Screenshot] 1_38_giao_dich__tick_volume_ma.png
+[Done Screenshot] 1_38_giao_dich__tick_volume_ma.png in 2.4s
+[Start Screenshot] 1_39_giao_dich__tab_hien_thi.png
+[Done Screenshot] 1_39_giao_dich__tab_hien_thi.png in 2.4s
+[Start Screenshot] 1_40_giao_dich__tick_tuan.png
+[Done Screenshot] 1_40_giao_dich__tick_tuan.png in 2.39s
+[Start Screenshot] 1_41_giao_dich__mac_dinh_setting_footer.png
+[Done Screenshot] 1_41_giao_dich__mac_dinh_setting_footer.png in 2.37s
+[Start Screenshot] 1_42_giao_dich__xac_nhan_ok_khoi_luong.png
+[Done Screenshot] 1_42_giao_dich__xac_nhan_ok_khoi_luong.png in 2.55s
+[Start Screenshot] 1_43_giao_dich__3_cham_layer_khoi_luong.png
+[Done Screenshot] 1_43_giao_dich__3_cham_layer_khoi_luong.png in 2.3s
+[Start Screenshot] 1_44_giao_dich__hover_thu_tu_truc_quan_volume.png
+[Done Screenshot] 1_44_giao_dich__hover_thu_tu_truc_quan_volume.png in 2.4s
+[Start Screenshot] 1_45_giao_dich__hover_chuyen_toi_volume.png
+[Done Screenshot] 1_45_giao_dich__hover_chuyen_toi_volume.png in 2.21s
+[Start Screenshot] 1_46_giao_dich__hover_ghim_volume.png
+[Done Screenshot] 1_46_giao_dich__hover_ghim_volume.png in 2.44s
+[Start Screenshot] 1_47_giao_dich__remove_layer_volume.png
+[Done Screenshot] 1_47_giao_dich__remove_layer_volume.png in 2.38s
+[Start Screenshot] 1_57_giao_dich__open_setting.png
+[Done Screenshot] 1_57_giao_dich__open_setting.png in 2.32s
+[Start Screenshot] 1_58_giao_dich__hover_nhan.png
+[Done Screenshot] 1_58_giao_dich__hover_nhan.png in 2.45s
+[Start Screenshot] 1_59_giao_dich__hover_duong.png
+[Done Screenshot] 1_59_giao_dich__hover_duong.png in 2.26s
+[Start Screenshot] 1_60_giao_dich__reset_scale.png
+[Done Screenshot] 1_60_giao_dich__reset_scale.png in 2.36s
+[Start Screenshot] 1_61_2w.png
+[Done Screenshot] 1_61_2w.png in 2.33s
+[Start Screenshot] 1_62_giao_dich__open_time_axis_setting.png
+[Done Screenshot] 1_62_giao_dich__open_time_axis_setting.png in 2.31s
+[Start Screenshot] 1_63_giao_dich__chon_ngay_13.png
+[Done Screenshot] 1_63_giao_dich__chon_ngay_13.png in 2.35s
+[Start Screenshot] 1_64_giao_dich__pham_vi_tuy_chinh.png
+[Done Screenshot] 1_64_giao_dich__pham_vi_tuy_chinh.png in 2.33s
+[Start Screenshot] 1_65_giao_dich__chon_tu_ngay_13.png
+[Done Screenshot] 1_65_giao_dich__chon_tu_ngay_13.png in 2.3s
+[Start Screenshot] 1_66_giao_dich__chon_den_ngay_13.png
+[Done Screenshot] 1_66_giao_dich__chon_den_ngay_13.png in 2.34s
+[Start Screenshot] 1_66_1_giao_dich__chon_den_ngay_sau_click.png
+[Done Screenshot] 1_66_1_giao_dich__chon_den_ngay_sau_click.png in 2.44s
+[Start Screenshot] 1_66_2_giao_dich__chon_mui_gio_dropdown.png
+[Done Screenshot] 1_66_2_giao_dich__chon_mui_gio_dropdown.png in 2.37s
+[Start Screenshot] 1_67_giao_dich__chon_mui_gio_utc_denver.png
+[Done Screenshot] 1_67_giao_dich__chon_mui_gio_utc_denver.png in 2.41s
+[Start Screenshot] 1_69_giao_dich__click_log.png
+[Done Screenshot] 1_69_giao_dich__click_log.png in 2.34s
+[Start Screenshot] 1_70_giao_dich__click_tu_dong.png
+[Done Screenshot] 1_70_giao_dich__click_tu_dong.png in 2.39s
+[Captured] 1_giao_dich.png
+[Captured] 2_bang_gia.png
+[Captured] 3_loc_co_phieu.png
+[Captured] 4_goi_dich_vu.png
+[Captured] 5_san_bot.png
+[Start Screenshot] 6_1_thi_truong_bien_dong__phan_bo_dong_tien.png
+[Done Screenshot] 6_1_thi_truong_bien_dong__phan_bo_dong_tien.png in 2.36s
+[Captured] Biến động + Phân bổ dòng tiền
+[Start Screenshot] 6_2_thi_truong_tac_dong_index.png
+[Done Screenshot] 6_2_thi_truong_tac_dong_index.png in 2.4s
+[Captured] Tác động đến index
+[Start Screenshot] 6_3_thi_truong_nuoc_ngoai__1nam.png
+[Done Screenshot] 6_3_thi_truong_nuoc_ngoai__1nam.png in 2.46s
+[Captured] Nước ngoài - 1 năm
+[Start Screenshot] 6_4_thi_truong_nuoc_ngoai__10phien.png
+[Done Screenshot] 6_4_thi_truong_nuoc_ngoai__10phien.png in 2.35s
+[Captured] Nước ngoài - 10 phiên
+[Start Screenshot] 6_5_thi_truong_tu_doanh__ytd.png
+[Done Screenshot] 6_5_thi_truong_tu_doanh__ytd.png in 2.41s
+[Captured] Tự doanh - YTD
+[Start Screenshot] 6_6_thi_truong_tu_doanh__10phien.png
+[Done Screenshot] 6_6_thi_truong_tu_doanh__10phien.png in 2.26s
+[Captured] Tự doanh - 10 phiên
+[Start Screenshot] 6_7_thi_truong_thanh_khoan__5d.png
+[Done Screenshot] 6_7_thi_truong_thanh_khoan__5d.png in 2.45s
+[Captured] Thanh khoản - 5D
+[Start Screenshot] 6_8_thi_truong_thanh_khoan__0d.png
+[Done Screenshot] 6_8_thi_truong_thanh_khoan__0d.png in 2.35s
+[Captured] Thanh khoản - 0D
+[Tab] CỔ PHIẾU > CHỈ SỐ
+[Start Screenshot] 7_1_co_phieu_chi_so__%.png
+[Done Screenshot] 7_1_co_phieu_chi_so__%.png in 2.31s
+[Start Screenshot] 7_2_co_phieu_chi_so__thay_doi.png
+[Done Screenshot] 7_2_co_phieu_chi_so__thay_doi.png in 2.41s
+[Start Screenshot] 7_3_co_phieu_chi_so__klgd.png
+[Done Screenshot] 7_3_co_phieu_chi_so__klgd.png in 2.35s
+[Tab] CỔ PHIẾU > CỔ PHIẾU > BÙNG NỔ KL
+[Start Screenshot] 7_4_bung_no_kl__1d_%.png
+[Done Screenshot] 7_4_bung_no_kl__1d_%.png in 2.43s
+[Start Screenshot] 7_5_bung_no_kl__1d_thay_doi.png
+[Done Screenshot] 7_5_bung_no_kl__1d_thay_doi.png in 2.27s
+[Start Screenshot] 7_6_bung_no_kl__1d_gtgd.png
+[Done Screenshot] 7_6_bung_no_kl__1d_gtgd.png in 2.27s
+[Start Screenshot] 7_7_bung_no_kl__5d_%.png
+[Done Screenshot] 7_7_bung_no_kl__5d_%.png in 2.27s
+[Start Screenshot] 7_8_bung_no_kl__5d_thay_doi.png
+[Done Screenshot] 7_8_bung_no_kl__5d_thay_doi.png in 2.37s
+[Start Screenshot] 7_9_bung_no_kl__5d_gtgd.png
+[Done Screenshot] 7_9_bung_no_kl__5d_gtgd.png in 2.4s
+[Tab] CỔ PHIẾU > BIẾN ĐỘNG GIÁ
+[Start Screenshot] 7_10_bien_dong__%.png
+[Done Screenshot] 7_10_bien_dong__%.png in 2.37s
+[Start Screenshot] 7_11_bien_dong__thay_doi.png
+[Done Screenshot] 7_11_bien_dong__thay_doi.png in 2.37s
+[Start Screenshot] 7_12_bien_dong__1w.png
+[Done Screenshot] 7_12_bien_dong__1w.png in 2.43s
+[Start Screenshot] 7_13_bien_dong__1m.png
+[Done Screenshot] 7_13_bien_dong__1m.png in 2.46s
+[Tab] CẠN CUNG
+[Start Screenshot] 7_15_can_cung__1d_%.png
+[Done Screenshot] 7_15_can_cung__1d_%.png in 2.4s
+[Start Screenshot] 7_14_can_cung__1d_thay_doi.png
+[Done Screenshot] 7_14_can_cung__1d_thay_doi.png in 2.4s
+[Start Screenshot] 7_16_can_cung__1d_gtgd.png
+[Done Screenshot] 7_16_can_cung__1d_gtgd.png in 2.36s
+[Start Screenshot] 7_17_can_cung__5d_%.png
+[Done Screenshot] 7_17_can_cung__5d_%.png in 2.3s
+[Start Screenshot] 7_18_can_cung__5d_thay_doi.png
+[Done Screenshot] 7_18_can_cung__5d_thay_doi.png in 2.34s
+[Start Screenshot] 7_19_can_cung__5d_klgd.png
+[Done Screenshot] 7_19_can_cung__5d_klgd.png in 2.32s
+[Start Screenshot] 7_20_vuot_dinh__thay_doi.png
+[Done Screenshot] 7_20_vuot_dinh__thay_doi.png in 2.39s
+[Start Screenshot] 7_21_vuot_dinh__%.png
+[Done Screenshot] 7_21_vuot_dinh__%.png in 2.39s
+[Start Screenshot] 7_22_vuot_dinh__gtgd.png
+[Done Screenshot] 7_22_vuot_dinh__gtgd.png in 2.47s
+[Start Screenshot] 7_23_pha_day__1d_%.png
+[Done Screenshot] 7_23_pha_day__1d_%.png in 2.32s
+[Start Screenshot] 7_24_pha_day__1d_thay_doi.png
+[Done Screenshot] 7_24_pha_day__1d_thay_doi.png in 2.36s
+[Start Screenshot] 7_25_pha_day__1d_klgd.png
+[Done Screenshot] 7_25_pha_day__1d_klgd.png in 2.31s
+[Start Screenshot] 7_26_nganh.png
+[Done Screenshot] 7_26_nganh.png in 2.38s
+[Captured] Ngành
+[Start Screenshot] 8_1_xbot_tin_hieu__bot_phai_sinh.png
+[Done Screenshot] 8_1_xbot_tin_hieu__bot_phai_sinh.png in 2.37s
+[Start Screenshot] 8_2_xbot_tin_hieu__bot_co_so.png
+[Done Screenshot] 8_2_xbot_tin_hieu__bot_co_so.png in 2.23s
+[Start Screenshot] 8_bot_phai_sinh.png
+[Done Screenshot] 8_bot_phai_sinh.png in 2.33s
+[Start Screenshot] 8_3_modal_bot_phai_sinh__hieu_suat_1w.png
+[Done Screenshot] 8_3_modal_bot_phai_sinh__hieu_suat_1w.png in 2.42s
+[Start Screenshot] 8_4_modal_bot_phai_sinh__hieu_suat_tat_ca.png
+[Done Screenshot] 8_4_modal_bot_phai_sinh__hieu_suat_tat_ca.png in 2.43s
+[Start Screenshot] 8_5_modal_bot_phai_sinh__lenh_mo_lich_su.png
+[Done Screenshot] 8_5_modal_bot_phai_sinh__lenh_mo_lich_su.png in 7.75s
+[Start Screenshot] 8_6_modal_xac_nhan_nhan_tin_hieu.png
+[Done Screenshot] 8_6_modal_xac_nhan_nhan_tin_hieu.png in 2.48s
+[Start Screenshot] 8_7_modal_xac_nhan_da_tick_checkbox.png
+[Done Screenshot] 8_7_modal_xac_nhan_da_tick_checkbox.png in 2.35s
+[Start Screenshot] 8_8_modal_sau_khi_xac_nhan_nhan_tin_hieu.png
+[Done Screenshot] 8_8_modal_sau_khi_xac_nhan_nhan_tin_hieu.png in 3.04s
+[Start Screenshot] 8_9_xbot__bot_phai_sinh_sau_nhan_tin_hieu.png
+[Done Screenshot] 8_9_xbot__bot_phai_sinh_sau_nhan_tin_hieu.png in 2.31s
+[Start Screenshot] 8_bot_co_so.png
+[Done Screenshot] 8_bot_co_so.png in 2.35s
+[Start Screenshot] 8_10_modal_bot_co_so__hieu_suat_tat_ca.png
+[Done Screenshot] 8_10_modal_bot_co_so__hieu_suat_tat_ca.png in 2.33s
+[Start Screenshot] 8_11_modal_bot_co_so__hieu_suat_1w.png
+[Done Screenshot] 8_11_modal_bot_co_so__hieu_suat_1w.png in 2.33s
+[Start Screenshot] 8_12_modal_bot_co_so__lenh_mo_lich_su.png
+[Done Screenshot] 8_12_modal_bot_co_so__lenh_mo_lich_su.png in 2.45s
+[Start Screenshot] 8_13_modal_xac_nhan_bot_co_so.png
+[Done Screenshot] 8_13_modal_xac_nhan_bot_co_so.png in 2.43s
+[Start Screenshot] 8_14_modal_bot_co_so__da_tick_checkbox.png
+[Done Screenshot] 8_14_modal_bot_co_so__da_tick_checkbox.png in 2.27s
+[Start Screenshot] 8_15_modal_bot_co_so__sau_xac_nhan.png
+[Done Screenshot] 8_15_modal_bot_co_so__sau_xac_nhan.png in 2.46s
+[Start Screenshot] 8_16_xbot__bot_co_so_sau_nhan_tin_hieu.png
+[Done Screenshot] 8_16_xbot__bot_co_so_sau_nhan_tin_hieu.png in 2.21s
+[Start Screenshot] 8_17_xbot__tim_kiem_hah.png
+[Done Screenshot] 8_17_xbot__tim_kiem_hah.png in 2.31s
+[Start Screenshot] 8_21_xbot_bot_cua_toi__phai_sinh.png
+[Done Screenshot] 8_21_xbot_bot_cua_toi__phai_sinh.png in 2.33s
+[Start Screenshot] 8_22_xbot_bot_cua_toi__modal_huy_phai_sinh.png
+[Done Screenshot] 8_22_xbot_bot_cua_toi__modal_huy_phai_sinh.png in 2.46s
+[Start Screenshot] 8_23_xbot_bot_cua_toi__phai_sinh_sau_huy.png
+[Done Screenshot] 8_23_xbot_bot_cua_toi__phai_sinh_sau_huy.png in 2.48s
+[Start Screenshot] 8_24_xbot_bot_cua_toi__co_so.png
+[Done Screenshot] 8_24_xbot_bot_cua_toi__co_so.png in 2.32s
+[Start Screenshot] 8_25_xbot_bot_cua_toi__modal_huy_co_so.png
+[Done Screenshot] 8_25_xbot_bot_cua_toi__modal_huy_co_so.png in 2.33s
+[Start Screenshot] 8_26_xbot_bot_cua_toi__co_so_sau_huy.png
+[Done Screenshot] 8_26_xbot_bot_cua_toi__co_so_sau_huy.png in 2.45s
+[Start Screenshot] 9_xbot_ta.png
+[Done Screenshot] 9_xbot_ta.png in 2.39s
+[Start Screenshot] 9_1_bang_gia_tab.png
+[Done Screenshot] 9_1_bang_gia_tab.png in 2.28s
+[Start Screenshot] 9_2_nganh_hien_thi_dropdown.png
+[Done Screenshot] 9_2_nganh_hien_thi_dropdown.png in 2.36s
+[Start Screenshot] 9_2_1_bo_tick_vn30_thep.png
+[Done Screenshot] 9_2_1_bo_tick_vn30_thep.png in 2.36s
+[Start Screenshot] 9_3_bo_tick_vn30_thep.png
+[Done Screenshot] 9_3_bo_tick_vn30_thep.png in 2.43s
+[Start Screenshot] 9_4_modal_them_ma_ck.png
+[Done Screenshot] 9_4_modal_them_ma_ck.png in 2.44s
+[Start Screenshot] 9_4_1_modal_them_ma_ck.png
+[Done Screenshot] 9_4_1_modal_them_ma_ck.png in 2.44s
+[Start Screenshot] 9_5_chon_TCB.png
+[Done Screenshot] 9_5_chon_TCB.png in 2.37s
+[Start Screenshot] 9_6_sau_khi_them_ma.png
+[Done Screenshot] 9_6_sau_khi_them_ma.png in 2.37s
+[Start Screenshot] 9_7_modal_HDG_tong_quan.png
+[Done Screenshot] 9_7_modal_HDG_tong_quan.png in 2.58s
+[Start Screenshot] 9_8_modal_evf_nhan_dinh.png
+[Done Screenshot] 9_8_modal_evf_nhan_dinh.png in 2.34s
+[Start Screenshot] 9_10_modal_evf_nhan_dinh.png
+[Done Screenshot] 9_10_modal_evf_nhan_dinh.png in 2.33s
+[Start Screenshot] 9_11_xchart_ai_tab.png
+[Done Screenshot] 9_11_xchart_ai_tab.png in 2.28s
+[Start Screenshot] 9_13_rrg_1d.png
+[Done Screenshot] 9_13_rrg_1d.png in 2.41s
+[Start Screenshot] 9_14_dong_tien_thong_minh.png
+[Done Screenshot] 9_14_dong_tien_thong_minh.png in 2.32s
+[Start Screenshot] 9_15_tai_chinh_dinh_gia.png
+[Done Screenshot] 9_15_tai_chinh_dinh_gia.png in 2.31s
+[Start Screenshot] 9_16_chi_so_quy_kqkd.png
+[Done Screenshot] 9_16_chi_so_quy_kqkd.png in 2.44s
+[Start Screenshot] 9_17_chi_so_nam_mac_dinh.png
+[Done Screenshot] 9_17_chi_so_nam_mac_dinh.png in 2.41s
+[Start Screenshot] 9_19_bao_cao_cdkh_quy.png
+[Done Screenshot] 9_19_bao_cao_cdkh_quy.png in 2.36s
+[Start Screenshot] 9_20_bao_cao_cdkh_nam.png
+[Done Screenshot] 9_20_bao_cao_cdkh_nam.png in 2.27s
+[Start Screenshot] 9_21_kqkd_nam.png
+[Done Screenshot] 9_21_kqkd_nam.png in 2.3s
+[Start Screenshot] 9_22_kqkd_quy.png
+[Done Screenshot] 9_22_kqkd_quy.png in 2.33s
+[Start Screenshot] 9_23_luu_chuyen_quy.png
+[Done Screenshot] 9_23_luu_chuyen_quy.png in 2.26s
+[Start Screenshot] 9_24_luu_chuyen_nam.png
+[Done Screenshot] 9_24_luu_chuyen_nam.png in 2.27s
+[Start Screenshot] 9_25_ho_so_cong_ty.png
+[Done Screenshot] 9_25_ho_so_cong_ty.png in 2.36s
+[Start Screenshot] 9_26_ho_so_co_dong.png
+[Done Screenshot] 9_26_ho_so_co_dong.png in 2.31s

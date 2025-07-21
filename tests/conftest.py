@@ -140,4 +140,39 @@ def browser():
         browser = p.chromium.launch(channel="msedge", headless=False, slow_mo=1000)
         yield browser
         browser.close()
+#############################################
+import pytest
+from playwright.sync_api import sync_playwright
+from utils.config import EMAIL, PASSWORD
+
+@pytest.fixture(scope="session")
+def browser():
+    with sync_playwright() as p:
+        browser = p.chromium.launch(channel="msedge", headless=False)
+        yield browser
+        browser.close()
+
+@pytest.fixture(scope="session")
+def context(browser):
+    context = browser.new_context()
+    yield context
+    context.close()
+
+@pytest.fixture(scope="session")
+def page(context):
+    page = context.new_page()
+    yield page
+    page.close()
+
+@pytest.fixture(scope="session")
+def login(page):
+    page.goto("https://xno.vn/dang-nhap")
+    page.locator("input[placeholder='Vui lòng nhập email...']").fill(EMAIL)
+    page.locator("input[placeholder='Mật khẩu đăng nhập...']").fill(PASSWORD)
+    page.locator("button[type='submit']:has-text('Đăng nhập')").click()
+
+    page.wait_for_timeout(5000)
+    print("URL sau khi login:", page.url)
+    yield page
+
 
