@@ -46,7 +46,7 @@ class TestTabBangGia:
         self.page.wait_for_timeout(2000)
 
         self.tracker.set_section("Modal HDG Tổng quan")
-        self.page.locator("div[tabindex='0']:has-text('HDG')").first.click()
+        self.page.locator("div[tabindex='0']:has-text('HDB')").first.click()
         self.page.wait_for_timeout(2000)
 
         self.tracker.set_section("Modal EVF Nhận định")
