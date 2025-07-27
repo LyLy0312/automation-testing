@@ -588,7 +588,6 @@ class XNODashboardPageDirect:
 
     @allure.feature("XBot TA")
     def capture_tab_xbot_ta_and_subtabs(self):
-
         self.page.locator("button:has-text('XBot TA')").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("9_xbot_ta.png")
@@ -687,6 +686,164 @@ class XNODashboardPageDirect:
         self.screenshot("9_26_ho_so_co_dong.png")
 
         self.page.locator("button[aria-label='Close']").click()
+
+    @allure.feature("Sàn bot")
+    def capture_tab_san_bot_and_subtabs(self):
+        self.page.locator("a:has-text('Sàn bot')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot.png")
+
+        self.page.locator("div.bg-card.rounded-full div.text-xs:has-text('Nhận tín hiệu')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_nhan_tin_hieu_phai_sinh.png")
+
+        self.page.locator("div[data-slot='tabContent']:has-text('Tất cả')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_tab_tat_ca.png")
+
+        self.page.locator("div[data-slot='tabContent']:has-text('Lệnh mở - Lịch sử')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_tab_lenh_mo_lich_su_phai_sinh.png")
+
+        self.page.locator("section[role='dialog'] div.text-refine-bg:has-text('Nhận tín hiệu')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_xac_nhan_tin_hieu_phai_sinh_1.png")
+
+        self.page.locator("section[role='dialog'] div.gap-1 input[type='checkbox']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_tick_checkbox_phai_sinh.png")
+
+        self.page.locator("section[role='dialog'] footer button:has-text('Nhận tín hiệu')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_xac_nhan_tin_hieu_phai_sinh_2.png")
+
+        self.page.locator("button[aria-label='Close']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_dong_modal_phai_sinh1.png")
+
+        self.page.locator("button[data-key='botcoso']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_bot_co_so.png")
+
+        self.page.locator("div.bg-card.rounded-full div.text-xs:has-text('Nhận tín hiệu')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_nhan_tin_hieu_co_so.png")
+
+        self.page.locator("div[data-slot='tabContent']:has-text('1W')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_tab_1w_co_so.png")
+
+        self.page.locator("div[data-slot='tabContent']:has-text('Lệnh mở - Lịch sử')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_tab_lenh_mo_lich_su_co_so.png")
+
+        self.page.locator("section[role='dialog'] div.text-refine-bg:has-text('Nhận tín hiệu')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_xac_nhan_tin_hieu_co_so_1.png")
+
+        self.page.locator("section[role='dialog'] div.gap-1 input[type='checkbox']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_tick_checkbox_co_so.png")
+
+        self.page.locator("section[role='dialog'] footer button:has-text('Nhận tín hiệu')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_xac_nhan_tin_hieu_co_so_2.png")
+
+        self.page.locator("button[aria-label='Close']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_dong_modal_co_so1.png")
+
+        self.page.locator("button[data-key='botcuatoi']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_bot_cua_toi_phai_sinh.png")
+
+        self.page.locator("div.rounded-full:has-text('Hủy nhận tín hiệu')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_huy_tin_hieu_phai_sinh.png")
+
+        self.page.locator("section[role='dialog'] footer button:has-text('Xác nhận hủy')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_xac_nhan_huy_phai_sinh.png")
+
+        self.page.wait_for_selector("button[data-key='$.1']", state="visible", timeout=30000)
+        self.page.locator("button[data-key='$.1']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_bot_cua_toi_co_so.png")
+
+        self.page.locator("div.rounded-full:has-text('Hủy nhận tín hiệu')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_huy_tin_hieu_co_so.png")
+
+        self.page.locator("section[role='dialog'] footer button:has-text('Xác nhận hủy')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot_xac_nhan_huy_co_so.png")
+
+    @allure.feature("Lọc cổ phiếu")
+    def capture_tab_loc_stock_and_subtabs(self):
+        self.page.locator("a:has-text('Lọc cổ phiếu')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("san_bot.png")
+
+        self.page.locator("div.relative.flex.h-10.w-full.cursor-pointer:has-text('Cổ phiếu tăng trưởng')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_tang_truong_1.png")
+
+        self.page.locator("div.relative.flex.h-10.w-full.cursor-pointer:has-text('Cổ phiếu giá trị')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_gia_tri.png")
+
+        self.page.locator("div.relative.flex.h-8.w-full.cursor-pointer:has-text('Nhóm biến động giá')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_nhom_bien_dong_gia.png")
+
+        self.page.locator("div.relative.flex.h-8.w-full.cursor-pointer:has-text('Nhóm thông dụng')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_nhom_thong_dung.png")
+
+        self.page.locator("div:has-text('Giá trị giao dịch trung bình 50 phiên (tỷ)')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_gia_tri_gd_50_phien.png")
+
+        self.page.locator("div:has-text('Giá trị giao dịch (tỷ)')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_gia_tri_gd.png")
+
+        self.page.locator("div.font-semibold:has-text('BID')").first.click()
+        self.page.wait_for_url("https://xno.vn/loc-co-phieu?symbol=BID&chiTietMaCK=true", timeout=20000)
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_ma_bid.png")
+
+        self.page.locator("button[data-key='banggia']:has-text('Bảng giá')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_bang_gia.png")
+
+        self.page.locator("button[data-key='nhandinh']:has-text('Nhận định')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_nhan_dinh.png")
+
+        self.page.locator("button[data-key='phantichtaichinh']:has-text('Tài chính')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_tai_chinh.png")
+
+        self.page.locator("button[data-key='chisotaichinh']:has-text('Chỉ số tài chính')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_chi_so_tai_chinh.png")
+
+        self.page.locator("button[data-key='baocaotaichinh']:has-text('Báo cáo tài chính')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_bao_cao_tai_chinh.png")
+
+        self.page.locator("button[data-key='thongtindoanhnghiep']:has-text('Hồ sơ')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_ho_so.png")
+
+        self.page.locator("button[data-key='codong']:has-text('Cổ đông & GD nội bộ')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_co_dong_gd_noi_bo.png")
+
+        self.page.locator("button[aria-label='Close']").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("loc_co_phieu_dong_modal.png")
 
 
 
