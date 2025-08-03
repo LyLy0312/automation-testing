@@ -1,0 +1,222 @@
+[
+  {
+    "filename": "san_bot.png",
+    "bot_info": {
+      "bot_name": "Mr.XNO",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 0.0,
+      "roi_percent": 0.0,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_bot_co_so.png",
+    "bot_info": {
+      "bot_name": "GEX",
+      "signal_status": "Nhận tín hiệu",
+      "win_rate_percent": 54.18,
+      "roi_percent": 317.64,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_bot_cua_toi_co_so.png",
+    "bot_info": {
+      "bot_name": "GEX",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 54.18,
+      "roi_percent": 317.64,
+      "signal_type": "Cơ sở"
+    }
+  },
+  {
+    "filename": "san_bot_bot_cua_toi_phai_sinh.png",
+    "bot_info": {
+      "bot_name": "VN30F1M",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 49.3,
+      "roi_percent": 134.26,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_dong_modal_co_so1.png",
+    "bot_info": {
+      "bot_name": "GEX",
+      "signal_status": "Mua",
+      "win_rate_percent": 54.18,
+      "roi_percent": 317.64,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_dong_modal_phai_sinh1.png",
+    "bot_info": {
+      "bot_name": "VN30F1M",
+      "signal_status": "Mua",
+      "win_rate_percent": 49.3,
+      "roi_percent": 134.26,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_huy_tin_hieu_co_so.png",
+    "bot_info": {
+      "bot_name": "Mr.XNO",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 0.0,
+      "roi_percent": 0.0,
+      "signal_type": "Không xác định"
+    }
+  },
+  {
+    "filename": "san_bot_huy_tin_hieu_phai_sinh.png",
+    "bot_info": {
+      "bot_name": "Mr.XNO",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 0.0,
+      "roi_percent": 0.0,
+      "signal_type": "Không xác định"
+    }
+  },
+  {
+    "filename": "san_bot_nhan_tin_hieu_co_so.png",
+    "bot_info": {
+      "bot_name": "Bot GEX",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 62.0,
+      "roi_percent": 334.0,
+      "signal_type": "Cơ sở"
+    }
+  },
+  {
+    "filename": "san_bot_nhan_tin_hieu_phai_sinh.png",
+    "bot_info": {
+      "bot_name": "VN30F1M 5min 600",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 59.0,
+      "roi_percent": 157.0,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_tab_1w_co_so.png",
+    "bot_info": {
+      "bot_name": "GEX",
+      "signal_status": "Buy",
+      "win_rate_percent": 70.0,
+      "roi_percent": 320.0,
+      "signal_type": "Cơ sở"
+    }
+  },
+  {
+    "filename": "san_bot_tab_lenh_mo_lich_su_co_so.png",
+    "bot_info": {
+      "bot_name": "GEX",
+      "signal_status": "Buy",
+      "win_rate_percent": 60.0,
+      "roi_percent": 266.04,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_tab_lenh_mo_lich_su_phai_sinh.png",
+    "bot_info": {
+      "bot_name": "VN30F1M 5min 600",
+      "signal_status": "Bán",
+      "win_rate_percent": 72.0,
+      "roi_percent": -15.56,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_tab_tat_ca.png",
+    "bot_info": {
+      "bot_name": "Bot VN30F1M 5min 600",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 60.0,
+      "roi_percent": 169.0,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_tick_checkbox_co_so.png",
+    "bot_info": {
+      "bot_name": "XNO TOP 1",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 0.0,
+      "roi_percent": 0.0,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_tick_checkbox_phai_sinh.png",
+    "bot_info": {
+      "bot_name": "XNO TOP 1",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 0.0,
+      "roi_percent": 0.0,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_xac_nhan_huy_co_so.png",
+    "bot_info": {
+      "bot_name": "XNO",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 0.0,
+      "roi_percent": 0.0,
+      "signal_type": "Cơ sở"
+    }
+  },
+  {
+    "filename": "san_bot_xac_nhan_huy_phai_sinh.png",
+    "bot_info": {
+      "bot_name": "XNO",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 0.0,
+      "roi_percent": 0.0,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_xac_nhan_tin_hieu_co_so_1.png",
+    "bot_info": {
+      "bot_name": "XNO TOP 1",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 0.0,
+      "roi_percent": 0.0,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_xac_nhan_tin_hieu_co_so_2.png",
+    "bot_info": {
+      "bot_name": "GEX",
+      "signal_status": "Buy",
+      "win_rate_percent": 60.0,
+      "roi_percent": 266.04,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_xac_nhan_tin_hieu_phai_sinh_1.png",
+    "bot_info": {
+      "bot_name": "XNO TOP 1",
+      "signal_status": "Không tín hiệu",
+      "win_rate_percent": 0.0,
+      "roi_percent": 0.0,
+      "signal_type": "Phái sinh"
+    }
+  },
+  {
+    "filename": "san_bot_xac_nhan_tin_hieu_phai_sinh_2.png",
+    "bot_info": {
+      "bot_name": "VN30F1M 5min 600",
+      "signal_status": "Short",
+      "win_rate_percent": 100.0,
+      "roi_percent": -15.56,
+      "signal_type": "Phái sinh"
+    }
+  }
+]
