@@ -318,6 +318,150 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("1_70_giao_dich__click_tu_dong.png")
 
+        self.page.locator("button[data-key='baocaophantich']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("bao_cao_phantich_truy_cap.png")
+
+        self.page.locator("button[aria-haspopup='listbox']:has(span:text('Loại báo cáo'))").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("bao_cao_phantich_mo_dropdown.png")
+
+        options = ["Tất cả", "Báo cáo Thị Trường", "Báo cáo Ngành", "Báo cáo Vĩ mô", "Cổ phiếu", "Khác"]
+        for i, option in enumerate(options, 1):
+            self.page.locator(f"li[role='option']:has(span:text('{option}'))").click()
+            self.page.wait_for_timeout(2000)
+            self.screenshot(f"bao_cao_phantich_{option.lower().replace(' ', '_')}.png")
+            if i < len(options):
+                self.page.locator(f"button[aria-haspopup='listbox']:has(span:text('{option}'))").click()
+                self.page.wait_for_timeout(1000)
+                self.screenshot(f"bao_cao_phantich_mo_dropdown_{i}.png")
+
+        self.page.locator("div.cursor-pointer.text-right:has-text('Xem')").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("bao_cao_phantich_xem_1.png")
+
+        self.page.locator("button[aria-label='Close']").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("bao_cao_phantich_dong_modal_1.png")
+
+        self.page.locator("div.cursor-pointer.text-right:has-text('Xem')").nth(1).click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("bao_cao_phantich_xem_2.png")
+
+        self.page.locator("button[aria-label='Close']").click()
+        self.page.wait_for_timeout(1000)
+        self.screenshot("bao_cao_phantich_dong_modal_2.png")
+
+    @allure.feature("Tìm kiếm mã chứng khoán")
+    def capture_tab_search_and_subtabs(self):
+        self.page.locator("a:has-text('Bảng giá')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_khoi_dong.png")
+
+        self.page.locator("button[aria-haspopup='dialog']").first.click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_mo_tim_kiem.png")
+
+        self.page.locator("input[aria-label='Tìm mã CK']").fill("PET")
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_nhap_ma.png")
+
+        self.page.locator("div.font-bold:has-text('PET')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_chon_ket_qua.png")
+
+        self.page.locator("div.group:has(div:has-text('CCI Trend Confirmation'))").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_cci_trend.png")
+
+        self.page.locator("div.group:has(div:has-text('Rolling Correlation Divergence'))").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_rolling_correlation.png")
+
+        self.page.locator("div.group:has(div:has-text('Volume ROC Confirmation'))").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_volume_roc.png")
+
+        self.page.locator("div.group:has(div:has-text('Volume Weighted ROC Reversal'))").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_volume_weighted_roc_reversal.png")
+
+        self.page.locator("div.group:has(div:has-text('Volume Weighted ROC Crossover'))").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_volume_weighted_roc_crossover.png")
+
+        self.page.locator("div.group:has(div:has-text('ROC Breakout'))").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_roc_breakout.png")
+
+        self.page.locator("button:has-text('Bảng giá')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_bang_gia.png")
+
+        self.page.locator("button:has-text('Nhận định')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_nhan_dinh.png")
+
+        self.page.locator("button:has-text('XChart AI')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_xchart_ai.png")
+
+        self.page.locator("button:has-text('Biểu đồ RRG')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_bieu_do_rrg.png")
+
+        self.page.locator("button:has-text('Dòng tiền thông minh')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_dong_tien_thong_minh.png")
+
+        self.page.locator("button:has-text('Tài chính')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_tai_chinh.png")
+
+        self.page.locator("button:has-text('Chỉ số tài chính')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_chi_so_tai_chinh.png")
+
+        self.page.locator("button:has-text('Hàng năm')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_chi_so_tai_chinh_hang_nam.png")
+
+        self.page.locator("button:has-text('Báo cáo tài chính')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_bao_cao_tai_chinh.png")
+
+        self.page.locator("button:has-text('Hàng năm')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_bao_cao_tai_chinh_hang_nam.png")
+
+        self.page.locator("button:has-text('Kết quả kinh doanh')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_ket_qua_kinh_doanh.png")
+
+        self.page.locator("button:has-text('Hàng quý')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_ket_qua_kinh_doanh_hang_quy.png")
+
+        self.page.locator("button:has-text('Lưu chuyển tiền tệ')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_luu_chuyen_tien_te.png")
+
+        self.page.locator("button:has-text('Hàng năm')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_luu_chuyen_tien_te_hang_nam.png")
+
+        self.page.locator("button:has-text('Hồ sơ')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_ho_so.png")
+
+        self.page.locator("button:has-text('Cổ đông & GD nội bộ')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_co_dong_gd_noi_bo.png")
+
+        self.page.locator("button[aria-label='Close']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("tim_kiem_pet_dong_modal.png")
+
     @allure.feature("Thị trường")
     def capture_tab_thi_truong_and_subtabs(self):
         self.page.locator("button:has-text('Thị trường')").click()
@@ -845,14 +989,20 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_dong_modal.png")
 
+    @allure.feature("Thông tin cá nhân")
+    def capture_tab_thong_tin_and_subtabs(self):
+        self.page.locator("span[data-slot='trigger'][aria-haspopup='true']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("thong_tin_ca_nhan.png")
 
+        self.page.locator("li[data-key='user-info']").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("Vao_trang_thong_tin_ca_nhan.png")
 
+        self.page.locator("div.flex.cursor-pointer:has-text('Mật khẩu')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("thong_tin_ca_nhan_mat_khau.png")
 
-
-
-
-
-
-
-
-
+        self.page.locator("div.flex.cursor-pointer:has-text('Gói hội viên')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("thong_tin_ca_nhan_goi_hoi_vien.png")
