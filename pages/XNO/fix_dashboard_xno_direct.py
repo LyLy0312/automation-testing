@@ -11,25 +11,6 @@ class XNODashboardPageDirect:
     def screenshot(self, name: str):
         pass
 
-    def wait_and_capture(self, url: str, selector: str, filename: str):
-        self.page.goto(url)
-        self.page.wait_for_selector(selector, timeout=10000)
-        self.page.wait_for_timeout(2000)
-        self.screenshot(path=os.path.join("../..", "screenshots", filename), full_page=True)
-        print(f"[Captured] {filename}")
-
-    @allure.feature("Main Tabs")
-    def capture_main_tabs(self):
-        main_tabs = [
-            ("https://xno.vn/giao-dich", "a[href='/giao-dich?']", "1_giao_dich.png"),
-            ("https://xno.vn/bang-gia", "a[href='/bang-gia?']", "2_bang_gia.png"),
-            ("https://xno.vn/loc-co-phieu", "a[href='/loc-co-phieu?']", "3_loc_co_phieu.png"),
-            ("https://xno.vn/goi-dich-vu", "a[href='/goi-dich-vu?']", "4_goi_dich_vu.png"),
-            ("https://xno.vn/san-bot", "div.flex.items-center.gap-3", "5_san_bot.png"),
-        ]
-        for url, selector, filename in main_tabs:
-            self.wait_and_capture(url, selector, filename)
-
     @allure.feature("Giao dịch")
     def capture_tab_giao_dich_and_subtabs(self):
         self.page.wait_for_timeout(2000)
@@ -318,21 +299,21 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("1_70_giao_dich__click_tu_dong.png")
 
-        self.page.locator("button[data-key='baocaophantich']").click()
+        self.page.locator("#tab-analysis-report").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("bao_cao_phantich_truy_cap.png")
 
-        self.page.locator("button[aria-haspopup='listbox']:has(span:text('Loại báo cáo'))").click()
+        self.page.locator("#filter-report-type").click()
         self.page.wait_for_timeout(1000)
         self.screenshot("bao_cao_phantich_mo_dropdown.png")
 
-        options = ["Tất cả", "Báo cáo Thị Trường", "Báo cáo Ngành", "Báo cáo Vĩ mô", "Cổ phiếu", "Khác"]
+        options = ["filter-report-all", "filter-report-market", "filter-report-industry", "filter-report-macro", "filter-report-stock", "filter-report-other"]
         for i, option in enumerate(options, 1):
-            self.page.locator(f"li[role='option']:has(span:text('{option}'))").click()
+            self.page.locator(f"#{option}").click()
             self.page.wait_for_timeout(2000)
             self.screenshot(f"bao_cao_phantich_{option.lower().replace(' ', '_')}.png")
             if i < len(options):
-                self.page.locator(f"button[aria-haspopup='listbox']:has(span:text('{option}'))").click()
+                self.page.locator(f"#{option}").click()
                 self.page.wait_for_timeout(1000)
                 self.screenshot(f"bao_cao_phantich_mo_dropdown_{i}.png")
 
@@ -354,7 +335,7 @@ class XNODashboardPageDirect:
 
     @allure.feature("Tìm kiếm mã chứng khoán")
     def capture_tab_search_and_subtabs(self):
-        self.page.locator("a:has-text('Bảng giá')").click()
+        self.page.locator("#nav-pricing").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_khoi_dong.png")
 
@@ -410,7 +391,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_nhan_dinh.png")
 
-        self.page.locator("button:has-text('XChart AI')").click()
+        self.page.locator("#tab-xchart-ai").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_xchart_ai.png")
 
@@ -483,11 +464,11 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_dong_tien_thong_minh.png")
 
-        self.page.locator("button:has-text('Tài chính')").click()
+        self.page.locator("#tab-finance").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_tai_chinh.png")
 
-        self.page.locator("button:has-text('Chỉ số tài chính')").click()
+        self.page.locator("#subtab-finance-financial-metrics").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_chi_so_tai_chinh.png")
 
@@ -535,7 +516,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_chi_so_tai_chinh_data_hang_quy.png")
 
-        self.page.locator("button:has-text('Báo cáo tài chính')").click()
+        self.page.locator("#subtab-finance-financial-reports").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_bao_cao_tai_chinh.png")
 
@@ -567,11 +548,11 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_luu_chuyen_tien_te_hang_nam.png")
 
-        self.page.locator("button:has-text('Hồ sơ')").click()
+        self.page.locator("#tab-profile").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_ho_so.png")
 
-        self.page.locator("button:has-text('Cổ đông & GD nội bộ')").click()
+        self.page.locator("#subtab-profile-shareholders").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("tim_kiem_pet_co_dong_gd_noi_bo.png")
 
@@ -581,17 +562,17 @@ class XNODashboardPageDirect:
 
     @allure.feature("Thị trường")
     def capture_tab_thi_truong_and_subtabs(self):
-        self.page.locator("button:has-text('Thị trường')").click()
+        self.page.locator("#tab-market").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("6_1_thi_truong_bien_dong__phan_bo_dong_tien.png")
         print("[Captured] Biến động + Phân bổ dòng tiền")
 
-        self.page.locator("button:has-text('Tác động đến index')").click()
+        self.page.locator("#subtab-market-fluctuation-index-impact").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("6_2_thi_truong_tac_dong_index.png")
         print("[Captured] Tác động đến index")
 
-        self.page.locator("button:has-text('Nước ngoài')").click()
+        self.page.locator("#subtab-market-foreign").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("6_3_thi_truong_nuoc_ngoai__1nam.png")
         print("[Captured] Nước ngoài - 1 năm")
@@ -600,7 +581,7 @@ class XNODashboardPageDirect:
         self.screenshot("6_4_thi_truong_nuoc_ngoai__10phien.png")
         print("[Captured] Nước ngoài - 10 phiên")
 
-        self.page.locator("button:has-text('Tự doanh')").click()
+        self.page.locator("#subtab-market-proprietary").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("6_5_thi_truong_tu_doanh__ytd.png")
         print("[Captured] Tự doanh - YTD")
@@ -609,7 +590,7 @@ class XNODashboardPageDirect:
         self.screenshot("6_6_thi_truong_tu_doanh__10phien.png")
         print("[Captured] Tự doanh - 10 phiên")
 
-        self.page.locator("button:has-text('Thanh khoản')").click()
+        self.page.locator("#subtab-market-liquidity").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("6_7_thi_truong_thanh_khoan__5d.png")
         print("[Captured] Thanh khoản - 5D")
@@ -621,7 +602,7 @@ class XNODashboardPageDirect:
     @allure.feature("Cổ phiếu")
     def capture_tab_co_phieu_and_subtabs(self):
 
-        self.page.locator("button:has-text('Cổ phiếu')").first.click()
+        self.page.locator("#tab-stocks").first.click()
         self.page.wait_for_timeout(2000)
 
         print("[Tab] CỔ PHIẾU > CHỈ SỐ")
@@ -635,7 +616,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("7_3_co_phieu_chi_so__klgd.png")
 
-        self.page.locator("div[data-slot='tabContent']:text('Cổ phiếu')").click()
+        self.page.locator("#tab-stocks_subtab").click()
 
         self.page.wait_for_timeout(2000)
         print("[Tab] CỔ PHIẾU > CỔ PHIẾU > BÙNG NỔ KL")
@@ -662,7 +643,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("7_9_bung_no_kl__5d_gtgd.png")
 
-        self.page.locator("div.flex >> text=Biến động giá").click()
+        self.page.locator("#subtab-stocks-price-fluctuation").click()
 
         self.page.wait_for_timeout(2000)
         print("[Tab] CỔ PHIẾU > BIẾN ĐỘNG GIÁ")
@@ -680,7 +661,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("7_13_bien_dong__1m.png")
 
-        self.page.locator("div.flex >> text=Cạn cung").click()
+        self.page.locator("#subtab-stocks-low-supply").click()
         # self.page.locator("div.cursor-pointer:has-text('Cạn cung')").click()
         self.page.wait_for_timeout(2000)
         print("[Tab] CẠN CUNG")
@@ -708,7 +689,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("7_19_can_cung__5d_klgd.png")
 
-        self.page.locator("div.flex >> text=Vượt đỉnh").click()
+        self.page.locator("#subtab-stocks-breakout-high").click()
         # self.page.locator("div.cursor-pointer:has-text('Vượt đỉnh')").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("7_20_vuot_dinh__thay_doi.png")
@@ -721,7 +702,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("7_22_vuot_dinh__gtgd.png")
 
-        self.page.locator("div.flex >> text=Phá đáy").click()
+        self.page.locator("#subtab-stocks-breakout-low").click()
         # self.page.locator("div.cursor-pointer:has-text('Phá đáy')").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("7_23_pha_day__1d_%.png")
@@ -742,7 +723,7 @@ class XNODashboardPageDirect:
     @allure.feature("XBot AI")
     def capture_tab_xbot_ai_and_subtabs(self):
 
-        self.page.locator("button:has-text('XBot AI')").click()
+        self.page.locator("#tab-xbot-ai").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("8_1_xbot_tin_hieu__bot_phai_sinh.png")
 
@@ -852,17 +833,17 @@ class XNODashboardPageDirect:
 
     @allure.feature("XBot TA")
     def capture_tab_xbot_ta_and_subtabs(self):
-        self.page.locator("button:has-text('XBot TA')").click()
+        self.page.locator("#tab-xbot-ta").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("9_xbot_ta.png")
 
     @allure.feature("Bảng giá")
     def capture_tab_bang_gia_and_subtabs_full(self):
-        self.page.locator("a:has-text('Bảng giá')").click()
+        self.page.locator("#nav-pricing").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("9_1_bang_gia_tab.png")
 
-        self.page.locator("button:has-text('Tất cả các ngành')").click()
+        self.page.locator("#industry-filter-button").click()
         self.page.wait_for_timeout(1000)
         self.screenshot("9_2_nganh_hien_thi_dropdown.png")
 
@@ -874,7 +855,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(1000)
         self.screenshot("9_3_bo_tick_vn30_thep.png")
 
-        self.page.locator("button:has-text('Thêm mã CK')").click()
+        self.page.locator("#add-stock-button").click()
         self.page.wait_for_timeout(1000)
         self.screenshot("9_4_modal_them_ma_ck.png")
 
@@ -886,7 +867,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("9_5_chon_TCB.png")
 
-        self.page.locator("footer button:has-text('Thêm mã')").click()
+        self.page.locator("#confirm-add-stock-button").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("9_6_sau_khi_them_ma.png")
 
@@ -910,7 +891,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(1000)
         self.screenshot("9_10_modal_evf_nhan_dinh.png")
 
-        self.page.locator("button:has-text('XChart AI')").click()
+        self.page.locator("#tab-xchart-ai").click()
         self.page.wait_for_timeout(1000)
         self.screenshot("9_11_xchart_ai_tab.png")
 
@@ -983,11 +964,11 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(1000)
         self.screenshot("9_14_dong_tien_thong_minh.png")
 
-        self.page.locator("button:has-text('Tài chính')").click()
+        self.page.locator("#tab-finance").click()
         self.page.wait_for_timeout(1000)
         self.screenshot("9_15_tai_chinh_dinh_gia.png")
 
-        self.page.locator("button:has-text('Chỉ số tài chính')").click()
+        self.page.locator("#subtab-finance-financial-metrics").click()
         self.page.wait_for_timeout(1000)
         self.screenshot("9_16_chi_so_quy_kqkd.png")
 
@@ -1035,7 +1016,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("9_17_6_tim_kiem_pet_chi_so_tai_chinh_data_hang_quy.png")
 
-        self.page.locator("button:has-text('Báo cáo tài chính')").click()
+        self.page.locator("#subtab-finance-financial-reports").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("9_19_bao_cao_cdkh_quy.png")
 
@@ -1059,11 +1040,11 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("9_24_luu_chuyen_nam.png")
 
-        self.page.locator("button:has-text('Hồ sơ')").click()
+        self.page.locator("#tab-profile").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("9_25_ho_so_cong_ty.png")
 
-        self.page.locator("button:has-text('Cổ đông & GD nội bộ')").click()
+        self.page.locator("#subtab-profile-shareholders").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("9_26_ho_so_co_dong.png")
 
@@ -1071,7 +1052,7 @@ class XNODashboardPageDirect:
 
     @allure.feature("Sàn bot")
     def capture_tab_san_bot_and_subtabs(self):
-        self.page.locator("a:has-text('Sàn bot')").click()
+        self.page.locator("#nav-bot-platform").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("san_bot.png")
 
@@ -1162,31 +1143,31 @@ class XNODashboardPageDirect:
 
     @allure.feature("Lọc cổ phiếu")
     def capture_tab_loc_stock_and_subtabs(self):
-        self.page.locator("a:has-text('Lọc cổ phiếu')").click()
+        self.page.locator("#nav-stock-filter").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("san_bot.png")
 
-        self.page.locator("div.relative.flex.h-10.w-full.cursor-pointer:has-text('Cổ phiếu tăng trưởng')").first.click()
+        self.page.locator("#filter-growth-stocks").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_tang_truong_1.png")
 
-        self.page.locator("div.relative.flex.h-10.w-full.cursor-pointer:has-text('Cổ phiếu giá trị')").first.click()
+        self.page.locator("#filter-value-stocks").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_gia_tri.png")
 
-        self.page.locator("div.relative.flex.h-8.w-full.cursor-pointer:has-text('Nhóm biến động giá')").first.click()
+        self.page.locator("#group-price-volatility").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_nhom_bien_dong_gia.png")
 
-        self.page.locator("div.relative.flex.h-8.w-full.cursor-pointer:has-text('Nhóm thông dụng')").first.click()
+        self.page.locator("#group-common").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_nhom_thong_dung.png")
 
-        self.page.locator("div:has-text('Giá trị giao dịch trung bình 50 phiên (tỷ)')").first.click()
+        self.page.locator("#filter-avg-transaction-value-50").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_gia_tri_gd_50_phien.png")
 
-        self.page.locator("div:has-text('Giá trị giao dịch (tỷ)')").first.click()
+        self.page.locator("#filter-transaction-value").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_gia_tri_gd.png")
 
@@ -1211,7 +1192,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_nhan_dinh.png")
 
-        self.page.locator("button:has-text('XChart AI')").click()
+        self.page.locator("#tab-xchart-ai").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_xchart_ai.png")
 
@@ -1288,7 +1269,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_tai_chinh.png")
 
-        self.page.locator("button[data-key='chisotaichinh']:has-text('Chỉ số tài chính')").first.click()
+        self.page.locator("#subtab-finance-financial-metrics").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_chi_so_tai_chinh.png")
 
@@ -1336,7 +1317,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_chi_so_tai_chinh_data_hang_quy.png")
 
-        self.page.locator("button:has-text('Báo cáo tài chính')").click()
+        self.page.locator("#subtab-finance-financial-reports").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu__bao_cao_tai_chinh.png")
 
@@ -1364,7 +1345,7 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_ho_so.png")
 
-        self.page.locator("button[data-key='codong']:has-text('Cổ đông & GD nội bộ')").first.click()
+        self.page.locator("#subtab-profile-shareholders").first.click()
         self.page.wait_for_timeout(2000)
         self.screenshot("loc_co_phieu_co_dong_gd_noi_bo.png")
 

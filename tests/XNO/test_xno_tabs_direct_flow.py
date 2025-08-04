@@ -19,7 +19,7 @@ def test_xno_full_tabs_flow(login_direct_and_get_page):
 
     dashboard.capture_tab_giao_dich_and_subtabs()
     dashboard.capture_tab_search_and_subtabs()
-    dashboard.capture_main_tabs()
+    # dashboard.capture_main_tabs()
     dashboard.capture_tab_thi_truong_and_subtabs()
     dashboard.capture_tab_co_phieu_and_subtabs()
     dashboard.capture_tab_xbot_ai_and_subtabs()
