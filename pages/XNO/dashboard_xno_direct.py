@@ -734,7 +734,9 @@ class XNODashboardPageDirect:
         self.page.wait_for_timeout(2000)
         self.screenshot("7_25_pha_day__1d_klgd.png")
 
-        self.page.locator("button:has-text('Ngành')").click()
+        # self.page.locator("button:has-text('Ngành')").click()
+        self.page.locator("div[data-slot='tabContent']:text('Ngành')").click()
+
         self.page.wait_for_timeout(2000)
         self.screenshot("7_26_nganh.png")
         print("[Captured] Ngành")
@@ -1159,6 +1161,12 @@ class XNODashboardPageDirect:
         self.page.locator("section[role='dialog'] footer button:has-text('Xác nhận hủy')").click()
         self.page.wait_for_timeout(2000)
         self.screenshot("san_bot_xac_nhan_huy_co_so.png")
+
+    @allure.feature("Gói dịch vụ")
+    def capture_tab_goi_dich_vu_and_subtabs(self):
+        self.page.locator("a:has-text('Gói dịch vụ')").click()
+        self.page.wait_for_timeout(2000)
+        self.screenshot("goi_dich_vu.png")
 
     @allure.feature("Lọc cổ phiếu")
     def capture_tab_loc_stock_and_subtabs(self):

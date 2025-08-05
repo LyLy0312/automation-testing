@@ -26,5 +26,6 @@ def test_xno_full_tabs_flow(login_direct_and_get_page):
     dashboard.capture_tab_xbot_ta_and_subtabs()
     dashboard.capture_tab_bang_gia_and_subtabs_full()
     dashboard.capture_tab_san_bot_and_subtabs()
+    dashboard.capture_tab_goi_dich_vu_and_subtabs()
     dashboard.capture_tab_loc_stock_and_subtabs()
     dashboard.capture_tab_thong_tin_and_subtabs()
