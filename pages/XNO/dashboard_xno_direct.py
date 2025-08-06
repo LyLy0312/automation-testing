@@ -807,7 +807,7 @@ class XNODashboardPageDirect:
         # Click on the "Cạn cung" in sublist "Cổ phiếu"
         self.page.locator("div.flex >> text=Cạn cung").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot("7_15_can_cung__1d_%.png")
+        self.screenshot("7_15_can_cung__5d_%.png")
 
         # Click on the "Thay đổi" to change the view (5D- Cạn cung)
         self.page.locator("div.text-end div.hover\\:text-muted.h-4.text-neutral-600").nth(0).click()
@@ -817,19 +817,19 @@ class XNODashboardPageDirect:
         # Click on the "KLGD" to change the view (5D- Cạn cung)
         self.page.locator("div.text-end div.hover\\:text-muted.h-4.text-neutral-600").nth(1).click()
         self.page.wait_for_timeout(2000)
-        self.screenshot("7_16_can_cung__1d_gtgd.png")
+        self.screenshot("7_16_can_cung__5d_klgd.png")
 
         # Click on the "1D" button to change the view (1D- Cạn cung)
         self.page.locator("button:has-text('1D')").click()
         self.page.wait_for_timeout(2000)
-        self.screenshot("7_17_can_cung__5d_%.png")
+        self.screenshot("7_17_can_cung__1d_%.png")
 
         # Click on the "%" to change the view (1D- Cạn cung)
         self.page.locator("div.text-end div.hover\\:text-muted.h-4.text-neutral-600").nth(0).click()
         self.page.wait_for_timeout(2000)
         self.screenshot("7_18_can_cung_1d_thay_doi.png")
 
-        # Click on the "GTGD" to change the view (1D- Cạn cung)
+        # Click on the "KLGD" to change the view (1D- Cạn cung)
         self.page.locator("div.text-end div.hover\\:text-muted.h-4.text-neutral-600").nth(1).click()
         self.page.wait_for_timeout(2000)
         self.screenshot("7_19_can_cung__1d_klgd.png")
