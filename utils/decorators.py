@@ -3,11 +3,13 @@ import time
 import allure
 import functools
 
+# Decorator to automatically take and attach a screenshot after executing a test step
 def screenshot_decorator(func):
     @functools.wraps(func)
     def wrapper(self, name: str, *args, **kwargs):
+        #screenshot folder path
         folder = os.path.join("..", "screenshots", "image_xno")
-        os.makedirs(folder, exist_ok=True)
+        os.makedirs(folder, exist_ok=True) # Ensure the folder exists
         path = os.path.join(folder, name)
 
         try:
@@ -19,6 +21,7 @@ def screenshot_decorator(func):
             end = time.time()
             print(f"[Done Screenshot] {name} in {round(end - start, 2)}s")
 
+            # screenshot to the Allure report if the file exists
             if os.path.exists(path):
                 allure.attach.file(
                     path,
